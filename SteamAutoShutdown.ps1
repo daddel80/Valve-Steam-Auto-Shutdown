@@ -197,8 +197,8 @@ function UpdateStatus {
             $shutdownLabel.Foreground = 'LightGray'
             if ($previousDownloadState) {
                 $window.Close()
-				Write-Log -message 'Shutdown has been triggered'
-                Stop-Computer
+		Write-Log -message 'Shutdown has been triggered'
+                Stop-Computer -Force
             }
         }
     })
