@@ -21,7 +21,7 @@ Dedicated to my son Julian who inspired me to program it!
 # Check if the .NET Framework is installed
 $framework = Get-ChildItem "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release
 if (-not $framework) {
-    Write-Error "Das .NET Framework ist nicht installiert."
+    Write-Error "The .NET Framework is not installed."
     exit
 }
 
