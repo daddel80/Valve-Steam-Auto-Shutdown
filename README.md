@@ -24,10 +24,12 @@ Steam Auto-Shutdown is a utility that monitors Steam downloads and triggers a sy
 
 ## Usage
 
-1. Start the Steam Auto-Shutdown utility by running the `SteamAutoShutdown.exe` file.
-2. The application will display the status of Steam installation and downloads.
-3. Once all downloads are completed, the utility will automatically initiate a system shutdown.
-4. To stop monitoring downloads and close the application, click the "Stop Monitor" button.
+1. Download the `SteamAutoShutdown.ps1` script from this repository.
+2. Open PowerShell.
+3. Navigate to the script's folder and run it:
+    ```
+    .\SteamAutoShutdown.ps1
+    ```
 
 ## Note
 
