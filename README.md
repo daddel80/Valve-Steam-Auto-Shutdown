@@ -28,6 +28,10 @@ Steam Auto-Shutdown is a utility that monitors Steam downloads and triggers a sy
 3. Once all downloads are completed, the utility will automatically initiate a system shutdown.
 4. To stop monitoring downloads and close the application, click the "Stop Monitor" button.
 
+## Note
+
+Halted downloads are also detected as downloads in progress. If a download is detected but there is no visible download in progress, please check for stopped downloads and clean them up by uninstalling or finishing the download.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
