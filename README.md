@@ -17,16 +17,14 @@ Steam Auto-Shutdown is a utility that monitors Steam downloads and triggers a sy
 
 ## Installation
 
-1. Clone or download this repository to your local machine.
-2. Locate the `SteamAutoShutdown_Binary.zip` file in the repository folder.
-3. Extract the contents of the `SteamAutoShutdown_Binary.zip` file. The password is "steam".
-4. Run the `SteamAutoShutdown.exe` file from the extracted folder to start the application.
+1. Download the `SteamAutoShutdown.ps1` script from this repository.
+2. Save the script in a folder on your computer.
 
 ## Usage
 
-1. Download the `SteamAutoShutdown.ps1` script from this repository.
-2. Open PowerShell.
-3. Navigate to the script's folder and run it:
+1. Open PowerShell.
+2. Navigate to the folder where you saved the `SteamAutoShutdown.ps1` script.
+3. Run the script:
     ```
     .\SteamAutoShutdown.ps1
     ```
