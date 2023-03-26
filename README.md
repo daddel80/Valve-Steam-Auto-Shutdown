@@ -15,19 +15,13 @@ Steam Auto-Shutdown is a utility that monitors Steam downloads and triggers a sy
 - .NET Framework installed
 - Steam installed
 
-## Installation
+## nstallation and Usage
+1. Download the repository as a ZIP file or clone it using git.
+2. Extract the contents of the ZIP file to a directory on your computer.
+3. Locate the start_SteamAutoShutdown.bat file in the extracted folder.
+4. Double-click the start_SteamAutoShutdown.bat file to run the PowerShell script.
 
-1. Download the `SteamAutoShutdown.ps1` script from this repository.
-2. Save the script in a folder on your computer.
-
-## Usage
-
-1. Open PowerShell.
-2. Navigate to the folder where you saved the `SteamAutoShutdown.ps1` script.
-3. Run the script:
-    ```
-    .\SteamAutoShutdown.ps1
-    ```
+Note: The start_SteamAutoShutdown.bat file will execute the SteamAutoShutdown.ps1 script. If you encounter any issues with the script's execution, ensure that your PowerShell execution policy allows running scripts.
 
 ## Note
 
