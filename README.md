@@ -1,4 +1,4 @@
-# Steam Auto-Shutdown
+# Valve Steam Auto-Shutdown
 
 Steam Auto-Shutdown is a utility that monitors Steam downloads and triggers a system shutdown when all downloads are completed. This tool is especially useful for users who want to leave their computer unattended while downloading large game files.
 
