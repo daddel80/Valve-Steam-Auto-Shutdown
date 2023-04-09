@@ -2,6 +2,8 @@
 
 Steam Auto-Shutdown is a utility that monitors Steam downloads and triggers a system shutdown when all downloads are completed. This tool is especially useful for users who want to leave their computer unattended while downloading large game files.
 
+<img src="./SteamAutoShutdown.png" alt="Steam Auto-Shutdown Screenshot" width="371" height="185">
+
 ## Features
 
 - Monitor Steam downloads in real-time
@@ -12,8 +14,8 @@ Steam Auto-Shutdown is a utility that monitors Steam downloads and triggers a sy
 ## Requirements
 
 - Windows operating system
-- .NET Framework installed
-- Steam installed
+- .NET Framework installed (already installed by Windows)
+- VSteam installed
 
 ## Installation and Usage
 
