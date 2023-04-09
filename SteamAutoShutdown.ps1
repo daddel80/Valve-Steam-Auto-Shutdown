@@ -2,7 +2,7 @@
 .DESCRIPTION
 Steam Auto-Shutdown Script
 Author: Thomas Knoefel
-Version: 1.0
+Version: 1.1
 Created: 2023-03-25
 
 .NOTES
@@ -32,7 +32,7 @@ Add-Type -AssemblyName System.Windows.Forms
 
 # Create a window and a stop button
 $window = New-Object System.Windows.Window
-$window.Title = 'Steam Auto-Shutdown v1.0    by Thomas Knoefel '
+$window.Title = 'Steam Auto-Shutdown v1.1    by Thomas Knoefel '
 $window.SizeToContent = 'WidthAndHeight'
 $window.ResizeMode = 'NoResize'
 $window.MinWidth = 400
@@ -207,7 +207,7 @@ function UpdateStatus {
 # Check Steam status
 $steam = Get-ItemProperty "HKCU:\Software\Valve\Steam" -ErrorAction SilentlyContinue | Select-Object SteamPath
 if ($steam) {
-    $steamLabel.Content = 'Steam is installed and ready'
+    $steamLabel.Content = 'Steam detected and ready'
     $steamLabel.Foreground = 'LightGreen'
 } else {
     $steamLabel.Content = 'Steam installation path not found'
