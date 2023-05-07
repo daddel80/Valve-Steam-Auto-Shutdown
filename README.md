@@ -24,7 +24,7 @@ Steam Auto-Shutdown is a utility that monitors Steam downloads and triggers a sy
 3. Locate the `start_SteamAutoShutdown.bat` file in the extracted folder.
 4. Double-click the `start_SteamAutoShutdown.bat` file to run the PowerShell script.
 
-*Reminder: The `start_SteamAutoShutdown.bat` file will execute the `SteamAutoShutdown.ps1` script. If you encounter any issues with the script's execution, ensure that your PowerShell execution policy allows running scripts.*
+*Reminder: The `start_SteamAutoShutdown.bat` file will execute the `SteamAutoShutdown.ps1` script. If you encounter any issues with the script's execution, ensure that your PowerShell execution policy allows running scripts. To enable it, run the command `Set-ExecutionPolicy RemoteSigned` as an administrator from the Command Prompt.*
 
 ## Note
 
