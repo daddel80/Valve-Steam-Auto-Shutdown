@@ -151,9 +151,20 @@ function Get-LibraryFolders {
     $libraryFoldersFile = Join-Path $steamPath 'steamapps\libraryfolders.vdf'
     $content = Get-Content $libraryFoldersFile -ErrorAction SilentlyContinue
     if (-not $content) { return }
+
     $paths = $content | Select-String -Pattern '"path"\s+"([^"]+)"' | ForEach-Object { $_.Matches.Groups[1].Value }
-    $paths
+    
+    $validPaths = @()
+    foreach ($path in $paths) {
+        if (Test-Path $path) {
+            $validPaths += $path
+        } else {
+            Write-Log -message "Library path not found: $path"
+        }
+    }
+    return $validPaths
 }
+
 
 # Check-Downloads funtion to Check if any Steam downloads are currently in progress
 function Check-Downloads {
