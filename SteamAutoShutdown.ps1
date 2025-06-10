@@ -206,7 +206,7 @@ function UpdateStatus {
             $downloadLabel.Foreground = 'LightGray'
             $shutdownLabel.Content = 'Shutdown is not enabled'
             $shutdownLabel.Foreground = 'LightGray'
-            if ($previousDownloadState) {
+            if ($script:previousDownloadState) {
                 $window.Close()
 		Write-Log -message 'Shutdown has been triggered'
                 Stop-Computer -Force
@@ -225,7 +225,12 @@ if ($steam) {
     $steamLabel.Foreground = 'Red'
 }
 
-$libraryFolders = Get-LibraryFolders -steamPath $steam.SteamPath
+if ($steam) {
+    $libraryFolders = Get-LibraryFolders -steamPath $steam.SteamPath
+} else {
+    $libraryFolders = @()
+}
+
 $window.Add_SourceInitialized({ UpdateStatus })
 $window.Add_Closed({ $global:timer.Stop() })
 $window.ShowDialog() | Out-Null
